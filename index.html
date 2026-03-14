@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I Медицинский заплыв «СВОЯ СТАЯ»</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              pink: '#F59AD1',
+              rose: '#EC7EC1',
+              blush: '#FFD8EE',
+              cream: '#FFF8FC',
+              ink: '#161212',
+              soft: '#7A4B67'
+            }
+          },
+          boxShadow: {
+            soft: '0 14px 40px rgba(91, 33, 69, 0.12)',
+            glow: '0 18px 60px rgba(236, 126, 193, 0.32)'
+          },
+          borderRadius: {
+            '4xl': '2rem'
+          },
+          backgroundImage: {
+            waves: 'radial-gradient(circle at 20% 20%, rgba(255,255,255,0.25) 0, rgba(255,255,255,0) 22%), radial-gradient(circle at 80% 30%, rgba(255,255,255,0.16) 0, rgba(255,255,255,0) 18%), linear-gradient(180deg, #F59AD1 0%, #F48ECB 45%, #EE82C5 100%)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif; }
+    .wave-line {
+      position: absolute;
+      inset-inline: 0;
+      height: 120px;
+      opacity: 0.18;
+      background: url("data:image/svg+xml,%3Csvg width='1440' height='120' viewBox='0 0 1440 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 56C120 24 240 24 360 56C480 88 600 88 720 56C840 24 960 24 1080 56C1200 88 1320 88 1440 56' stroke='white' stroke-width='10' stroke-linecap='round'/%3E%3C/svg%3E") center/cover no-repeat;
+    }
+  </style>
+</head>
+<body class="bg-brand-cream text-brand-ink antialiased">
+  <header class="relative overflow-hidden bg-waves">
+    <div class="wave-line top-16"></div>
+    <div class="wave-line bottom-8 rotate-180"></div>
+
+    <div class="mx-auto max-w-7xl px-4 pb-10 pt-4 sm:px-6 lg:px-8">
+      <div class="mb-6 flex items-center justify-between rounded-full bg-white/45 px-4 py-3 backdrop-blur md:px-6">
+        <div>
+          <p class="text-sm font-semibold tracking-wide text-brand-ink">СВОЯ СТАЯ</p>
+          <p class="text-xs text-brand-soft">I медицинский заплыв в России</p>
+        </div>
+        <a href="#partner" class="rounded-full bg-brand-ink px-4 py-2 text-sm font-semibold text-white transition hover:scale-[1.02]">Стать партнёром</a>
+      </div>
+
+      <section class="grid items-center gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 lg:py-8">
+        <div class="relative z-10">
+          <p class="mb-4 inline-flex rounded-full bg-white/55 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-soft backdrop-blur">Открытая вода • лето 2026 • Московская область</p>
+          <h1 class="max-w-3xl text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-5xl lg:text-6xl">
+            I Медицинский заплыв в России<br />
+            <span class="mt-2 inline-block">«СВОЯ СТАЯ»</span>
+          </h1>
+          <p class="mt-5 max-w-3xl text-lg font-semibold text-brand-ink/90 sm:text-xl">
+            Это не соревновательный, а объединяющий заплыв для тех, кто влюблен в медицину: врачей, психологов и специалистов помогающих профессий.
+          </p>
+          <p class="mt-4 max-w-3xl text-base leading-7 text-brand-ink/80 sm:text-lg">
+            А также — для тех, кто им доверяет: семей, друзей и пациентов.
+          </p>
+
+          <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+            <a href="#partner" class="inline-flex items-center justify-center rounded-full bg-brand-ink px-6 py-3 text-base font-semibold text-white shadow-soft transition hover:-translate-y-0.5">Стать партнёром</a>
+          </div>
+
+          <div class="mt-7 grid grid-cols-2 gap-3 sm:max-w-2xl sm:grid-cols-3">
+            <div class="rounded-3xl bg-white/70 p-4 shadow-soft backdrop-blur">
+              <p class="text-2xl font-black">50</p>
+              <p class="mt-1 text-sm text-brand-soft">одновременно плывут на открытой воде</p>
+            </div>
+            <div class="rounded-3xl bg-white/70 p-4 shadow-soft backdrop-blur">
+              <p class="text-2xl font-black">150</p>
+              <p class="mt-1 text-sm text-brand-soft">поддерживают на суше</p>
+            </div>
+            <div class="rounded-3xl bg-white/70 p-4 shadow-soft backdrop-blur col-span-2 sm:col-span-1">
+              <p class="text-2xl font-black">100 000</p>
+              <p class="mt-1 text-sm text-brand-soft">наблюдают и обсуждают в СМИ и на онлайн-площадках</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-md lg:max-w-none">
+          <div class="absolute -left-4 top-8 h-24 w-24 rounded-full bg-white/20 blur-2xl"></div>
+          <div class="absolute -right-2 bottom-10 h-28 w-28 rounded-full bg-white/30 blur-2xl"></div>
+          <div class="relative overflow-hidden rounded-[2rem] border border-white/40 bg-white/20 p-3 shadow-glow backdrop-blur">
+            <div class="overflow-hidden rounded-[1.6rem] bg-[#f392cb] aspect-[9/16] flex items-center justify-center">
+              <img src="images/dolphins.jpg" alt="Иллюстрация стаи дельфинов" class="h-full w-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+      <div class="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-8">
+        <div class="rounded-4xl bg-white p-6 shadow-soft sm:p-8">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-brand-soft">Миссия</p>
+          <h2 class="text-3xl font-black leading-tight sm:text-4xl">Зачем всё это нужно миру?</h2>
+          <p class="mt-5 text-base leading-7 text-brand-ink/80">Каждый из нас нуждается в своей стае.</p>
+          <p class="mt-4 text-base leading-7 text-brand-ink/80">В тех, кто нас поддержит и разрешит ошибаться. Кто приютит наши страхи и напоит чаем самые уязвимые переживания. А потом — подсветит нашу силу и проделанный путь.</p>
+          <p class="mt-4 text-base leading-7 text-brand-ink/80">Хочется создать место, где стая может встретиться. Где все, кто любят медицинский мир или хотят найти в нем новые смыслы, могли бы ощутить себя понятыми.</p>
+          <p class="mt-4 text-base leading-7 text-brand-ink/80">Обняться. И посмотреть друг на друга любящими глазами. Чтобы после заплыва, перед тем как заснуть, подумать: «Я теперь не один. Я нужен. И у меня есть своя стая».</p>
+          <blockquote class="mt-6 rounded-3xl bg-brand-blush p-5 text-lg font-semibold leading-8 text-brand-ink sm:text-xl">
+            «Плывём не на скорость, а на близость…»
+          </blockquote>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2">
+          <article class="rounded-4xl bg-[#ffe8f5] p-6 shadow-soft">
+            <div class="mb-4 text-3xl">🐋</div>
+            <h3 class="text-lg font-black">Новые смыслы</h3>
+            <p class="mt-2 text-sm leading-6 text-brand-ink/75">Мы плывем, чтобы вспомнить «зачем». Для тех, кто выгорел и потерял смыслы, но хочет продолжать делать то, что любил. Пришло время вырастить из китёнка — кита.</p>
+          </article>
+
+          <article class="rounded-4xl bg-white p-6 shadow-soft">
+            <div class="mb-4 text-3xl">🫧</div>
+            <h3 class="text-lg font-black">Поддержка</h3>
+            <p class="mt-2 text-sm leading-6 text-brand-ink/75">Мы хотим позаботиться о тех, кто держит на плаву других. Чтобы снова набрать кислород — и поплыть спасать мир. Проплывем, потанцуем, согреемся чаем и теплыми разговорами.</p>
+          </article>
+
+          <article class="rounded-4xl bg-white p-6 shadow-soft">
+            <div class="mb-4 text-3xl">🤍</div>
+            <h3 class="text-lg font-black">Поиск «своих»</h3>
+            <p class="mt-2 text-sm leading-6 text-brand-ink/75">Найти тех, с кем хочется нырнуть в одно течение. Обрести коллег, партнёров и друзей. Кто не осудит, погладит по голове и поможет разбить стеклянные потолки. Когда вместо «токсичного нетворкинга» — желание обнять и создавать вместе.</p>
+          </article>
+
+          <article class="rounded-4xl bg-[#ffe8f5] p-6 shadow-soft">
+            <div class="mb-4 text-3xl">🌊</div>
+            <h3 class="text-lg font-black">Телесно-терапевтический перформанс</h3>
+            <p class="mt-2 text-sm leading-6 text-brand-ink/75">Пространство, где можно всё. Плыть, искать своих, праздновать самобытность, быть наравне, чувствовать мурашки, ощущать значимость, быть причастным. Жить.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+      <div class="rounded-[2rem] bg-brand-ink p-6 text-white shadow-soft sm:p-8">
+        <div class="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-start">
+          <div>
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-white/60">Формат события</p>
+            <div class="mb-4 inline-flex rounded-full bg-brand-pink px-4 py-2 text-sm font-bold text-brand-ink">Стань частью I медицинского заплыва в России и войди в историю</div>
+            <h2 class="text-3xl font-black sm:text-4xl">Что представляет собой мероприятие?</h2>
+          </div>
+
+          <div class="grid gap-3 sm:grid-cols-2">
+            <div class="rounded-3xl bg-white/10 p-5 backdrop-blur">
+              <p class="text-lg font-bold">Это не спортивное соревнование, а объединяющий community-event.</p>
+              <p class="mt-2 text-sm leading-6 text-white/75">Для любящих свое дело: врачей, психологов, специалистов помогающих профессий и тех, кто им доверяет.</p>
+            </div>
+
+            <div class="rounded-3xl bg-white/10 p-5 backdrop-blur">
+              <p class="text-sm font-semibold text-white/60">02</p>
+              <p class="mt-2 text-lg font-bold">Станем одной стаей и проплывём символичные 200 метров на открытой воде.</p>
+              <p class="mt-2 text-sm leading-6 text-white/75">Ровно столько ударов в минуту составляет частота сердцебиения детёныша дельфина.</p>
+            </div>
+
+            <div class="rounded-3xl bg-white/10 p-5 backdrop-blur">
+              <p class="text-sm font-semibold text-white/60">03</p>
+              <p class="mt-2 text-lg font-bold">Можно плыть, а можно — усилить стаю на берегу.</p>
+              <p class="mt-2 text-sm leading-6 text-white/75">Каждый найдёт формат, который по душе. Чайная зона, музыка, живое общение и чувство, что тебя понимают.</p>
+            </div>
+
+            <div class="rounded-3xl bg-white/10 p-5 backdrop-blur">
+              <p class="text-sm font-semibold text-white/60">04</p>
+              <p class="mt-2 text-lg font-bold">Поддерживающая атмосфера без соревновательного давления.</p>
+              <p class="mt-2 text-sm leading-6 text-white/75">Присоединяйся, даже если никогда не плавал на профессиональном уровне.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+      <div class="rounded-[2rem] bg-waves p-6 shadow-soft sm:p-8">
+        <div class="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+          <div class="max-w-2xl text-brand-ink">
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-brand-soft">Аудитория</p>
+            <h2 class="text-3xl font-black sm:text-4xl">Кто наша стая?</h2>
+            <p class="mt-4 text-base leading-7 text-brand-ink/80">
+              Каждый участник — представитель профессионального сообщества, а само событие собирает людей с высоким уровнем вовлечённости, доверия и репутационного веса. Это пространство для тех, кто любит медицинский мир, и для тех, кто им доверяет: друзей, пациентов и их семей.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 sm:grid-cols-3">
+            <div class="rounded-3xl bg-white/80 p-5 text-center shadow-soft backdrop-blur">
+              <div class="text-2xl font-black">50</div>
+              <div class="mt-1 text-sm text-brand-soft">одновременно плывут на открытой воде</div>
+            </div>
+            <div class="rounded-3xl bg-white/80 p-5 text-center shadow-soft backdrop-blur">
+              <div class="text-2xl font-black">150</div>
+              <div class="mt-1 text-sm text-brand-soft">поддерживают на суше</div>
+            </div>
+            <div class="rounded-3xl bg-white/80 p-5 text-center shadow-soft backdrop-blur col-span-2 sm:col-span-1">
+              <div class="text-2xl font-black">100 000</div>
+              <div class="mt-1 text-sm text-brand-soft">наблюдают и обсуждают в СМИ и на онлайн-площадках</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-4xl bg-white p-6 shadow-soft">
+            <h3 class="text-lg font-black">Медицинское сообщество</h3>
+            <ul class="mt-3 space-y-2 text-sm leading-6 text-brand-ink/75">
+              <li>врачи разных специальностей</li>
+              <li>руководители частных клиник</li>
+              <li>управленцы в сфере медицины</li>
+              <li>медицинские предприниматели</li>
+            </ul>
+          </div>
+
+          <div class="rounded-4xl bg-white p-6 shadow-soft">
+            <h3 class="text-lg font-black">Психологическое сообщество</h3>
+            <ul class="mt-3 space-y-2 text-sm leading-6 text-brand-ink/75">
+              <li>клинические психологи</li>
+              <li>психотерапевты</li>
+              <li>специалисты по ментальному здоровью</li>
+            </ul>
+          </div>
+
+          <div class="rounded-4xl bg-white p-6 shadow-soft sm:col-span-2 lg:col-span-1">
+            <h3 class="text-lg font-black">Те, кто им доверяют</h3>
+            <ul class="mt-3 space-y-2 text-sm leading-6 text-brand-ink/75">
+              <li>друзья, пациенты и их семьи</li>
+              <li>те, кто разделяет наши ценности и чувствует, что нам — плыть в одну сторону</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#fff1f9]">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-brand-soft">Медийность</p>
+          <h2 class="text-3xl font-black sm:text-4xl">Охват и медийный потенциал проекта</h2>
+          <p class="mt-4 text-base leading-7 text-brand-ink/75">
+            Событие обладает сильным органическим потенциалом: оно объединяет профессионалов и тех, кто им доверяет, вызывает эмоциональный отклик и хорошо масштабируется в соцсетях, медиа и офлайн-среде.
+          </p>
+        </div>
+
+        <div class="mt-8 grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">
+          <div class="rounded-4xl bg-brand-ink p-6 text-white shadow-soft sm:p-8">
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-white/60">Ожидаемый онлайн- и офлайн-охват</p>
+            <p class="mt-4 text-5xl font-black">до 100 000</p>
+            <p class="mt-3 text-white/75">аудитория организаторов, блогеров, участников, гостей и медиапартнёров</p>
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-4xl bg-white p-6 shadow-soft">
+              <h3 class="text-lg font-black">Источники охвата</h3>
+              <ul class="mt-3 space-y-2 text-sm leading-6 text-brand-ink/75">
+                <li>блогеры и инфлюенсеры</li>
+                <li>профессиональные медицинские сообщества</li>
+                <li>медиапартнёры</li>
+                <li>онлайн-площадки организаторов</li>
+                <li>публикации участников и гостей</li>
+              </ul>
+            </div>
+
+            <div class="rounded-4xl bg-white p-6 shadow-soft">
+              <h3 class="text-lg font-black">Форматы контента</h3>
+              <ul class="mt-3 space-y-2 text-sm leading-6 text-brand-ink/75">
+                <li>фото и видео с мероприятия</li>
+                <li>интервью участников</li>
+                <li>сторис и репортажи</li>
+                <li>профессиональные публикации</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8" id="partner">
+      <div class="max-w-3xl">
+        <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-brand-soft">Для брендов, партнёров и спонсоров</p>
+        <h2 class="text-3xl font-black sm:text-4xl">Зачем участвовать в проекте?</h2>
+
+        <div class="mt-5 rounded-3xl bg-brand-blush p-5 shadow-soft">
+          <p class="inline-flex rounded-full bg-brand-pink px-3 py-1 text-sm font-bold text-brand-ink">Уникальность события</p>
+          <ul class="mt-4 space-y-2 text-base leading-7 text-brand-ink/85">
+            <li>• это возможность войти в историю, став частью I медицинского заплыва в России</li>
+            <li>• укрепить ценности и репутацию бренда.</li>
+          </ul>
+        </div>
+
+        <p class="mt-5 text-base leading-7 text-brand-ink/75">
+          Проект соединяет сразу три аудитории: медицинское сообщество, лидеров мнений и активную образованную аудиторию. Это создаёт сильную репутационную и медийную ценность для наших партнёров.
+        </p>
+      </div>
+
+      <div class="mt-8 grid gap-4 lg:grid-cols-3">
+        <div class="rounded-4xl bg-white p-6 shadow-soft">
+          <h3 class="text-lg font-black">Профессиональная аудитория</h3>
+          <p class="mt-3 text-sm leading-6 text-brand-ink/75">Прямой доступ к специалистам из медицины, психологии и сферы помогающих практик.</p>
+        </div>
+
+        <div class="rounded-4xl bg-white p-6 shadow-soft">
+          <h3 class="text-lg font-black">Репутационный капитал</h3>
+          <p class="mt-3 text-sm leading-6 text-brand-ink/75">Ассоциация бренда с поддержкой медицинского сообщества, ценностями доверия и заботы о людях.</p>
+        </div>
+
+        <div class="rounded-4xl bg-white p-6 shadow-soft">
+          <h3 class="text-lg font-black">Виральный контент</h3>
+          <p class="mt-3 text-sm leading-6 text-brand-ink/75">Фото, видео, сторис и публикации для дальнейшего использования.</p>
+        </div>
+      </div>
+
+      <div class="mt-10 max-w-4xl">
+        <h3 class="text-2xl font-black">Форматы сотрудничества</h3>
+        <p class="mt-4 text-base leading-7 text-brand-ink/75">
+          Мы готовы обсуждать разные форматы участия в проекте и собирать партнёрские решения под задачи компании. Чтобы участие бренда было не формальным, а стратегически выгодным и эффективным для участников.
+        </p>
+        <p class="mt-4 text-base leading-7 text-brand-ink/75">
+          Проект предполагает разные уровни взаимодействия: от стратегической поддержки события до точечных интеграций в отдельные зоны, активности и коммуникационные форматы.
+        </p>
+      </div>
+
+      <div class="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <div class="rounded-4xl bg-white p-6 shadow-soft">
+          <h4 class="text-lg font-black">Стратегический партнёр</h4>
+          <p class="mt-3 text-sm leading-6 text-brand-ink/75">
+            Максимальный уровень присутствия бренда в проекте: заметная интеграция в ключевые материалы, коммуникацию и общее позиционирование события.
+          </p>
+        </div>
+
+        <div class="rounded-4xl bg-white p-6 shadow-soft">
+          <h4 class="text-lg font-black">Партнёр события</h4>
+          <p class="mt-3 text-sm leading-6 text-brand-ink/75">
+            Интеграция бренда в отдельные элементы мероприятия, связанные с маршрутом, навигацией, экипировкой или опытом участников.
+          </p>
+        </div>
+
+        <div class="rounded-4xl bg-white p-6 shadow-soft">
+          <h4 class="text-lg font-black">Партнёр пространства</h4>
+          <p class="mt-3 text-sm leading-6 text-brand-ink/75">
+            Интеграция в одну из зон события: отдыха, общения, восстановления или гостевого сервиса.
+          </p>
+        </div>
+
+        <div class="rounded-4xl bg-white p-6 shadow-soft">
+          <h4 class="text-lg font-black">Контент-партнёр</h4>
+          <p class="mt-3 text-sm leading-6 text-brand-ink/75">
+            Присутствие бренда в информационном поле проекта: в анонсах, публикациях, визуальных материалах и контенте вокруг события.
+          </p>
+        </div>
+
+        <div class="rounded-4xl bg-white p-6 shadow-soft">
+          <h4 class="text-lg font-black">Информационный партнёр</h4>
+          <p class="mt-3 text-sm leading-6 text-brand-ink/75">
+            Поддержка проекта через медиаразмещение, анонсы, публикации и помощь в распространении информации о событии.
+          </p>
+        </div>
+
+        <div class="rounded-4xl bg-white p-6 shadow-soft">
+          <h4 class="text-lg font-black">Продуктовый партнёр</h4>
+          <p class="mt-3 text-sm leading-6 text-brand-ink/75">
+            Предоставление товаров, подарков, полезных материалов, решений или сервисов для участников и гостей мероприятия.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8" id="organizer">
+      <div class="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+        <div class="rounded-4xl bg-white p-6 shadow-soft sm:p-8">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-brand-soft">Организаторы</p>
+
+          <div class="space-y-6 text-brand-ink/80">
+            <div>
+              <h2 class="text-2xl font-black text-brand-ink">Катерина Евдокимова</h2>
+              <p class="mt-2 text-base leading-7">
+                Клинический психолог, когнитивно-поведенческий психотерапевт (МГУ, 1 мед Праги), победитель битвы психотерапевтов Сколково и спикер I Московской международной конференции по психотерапии и психосоматике.
+              </p>
+            </div>
+
+            <div>
+              <h2 class="text-2xl font-black text-brand-ink">Севастьяна Чистякова</h2>
+              <p class="mt-2 text-base leading-7">
+                Врач-анестезиолог-реаниматолог (МГУ, МВА), руководитель психологического департамента крупнейшего реабилитационного стационара в Европе — клиники «Три сестры». Организатор корпобучения для 250 сотрудников клиники по 1-й помощи в рамках подготовки к международной аккредитации JCI.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-4xl bg-brand-ink p-6 text-white shadow-soft sm:p-8">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-white/60">Контакты</p>
+          <h3 class="text-2xl font-black">Обсудить детали по любым вопросам и нырнуть в идею вместе:</h3>
+          <div class="mt-6 space-y-3 text-base leading-7 text-white/85">
+            <p>— в telegram: <a href="https://t.me/care_core_kate" target="_blank" rel="noopener noreferrer" class="font-semibold underline underline-offset-4 hover:text-white">@care_core_kate</a></p>
+            <p>— по электронной почте: <a href="mailto:ekaterus@gmail.com" class="font-semibold underline underline-offset-4 hover:text-white">ekaterus@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="px-4 pb-28 pt-4 sm:px-6 lg:px-8 lg:pb-10">
+    <div class="mx-auto max-w-7xl rounded-4xl border border-brand-ink/10 bg-white px-6 py-5 text-sm text-brand-ink/60 shadow-soft">
+      <p>*Мероприятие проводится частной инициативой, не является официальным мероприятием органов власти г. Москвы.</p>
+    </div>
+  </footer>
+
+  <div class="fixed inset-x-0 bottom-0 z-50 border-t border-brand-ink/10 bg-white/90 p-3 backdrop-blur lg:hidden">
+    <div class="mx-auto flex max-w-md gap-3">
+      <a href="#partner" class="flex-1 rounded-full bg-brand-ink px-4 py-3 text-center text-sm font-semibold text-white">Стать партнёром</a>
+      <a href="#organizer" class="flex-1 rounded-full bg-brand-blush px-4 py-3 text-center text-sm font-semibold text-brand-ink">Контакты</a>
+    </div>
+  </div>
+</body>
+</html>
